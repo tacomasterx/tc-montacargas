@@ -54,7 +54,7 @@
 <!-- End of mobile navigation -->
 <main>
   <section class="hero container">
-    <img class="hero__img" src="/logo.png" alt="Logo">
+    <%= image_tag ("logo.png"), class: "hero__img", alt: "Logo" %>
     <h2 class="hero__subtitle">Tomás Carrillo Núñez</h2>
     <h1 class="hero__title">TC<br>MONTACARGAS</h1>
     <p class="hero__description">Con más de 40 años de experiencia en montacargas eléctricos y de combustión.</p>
@@ -81,7 +81,7 @@
       </div>
     </div>
     <div class="about__img_wrapper">
-      <img loading="lazy" class="about__img" src="/Professional_pic.png" alt="Professional picture">
+      <%= image_tag ("Professional_pic.png"), class: "about__img", alt: "Professional picture", loading: "lazy" %>
     </div>
   </section>
   <section class="work container section">
@@ -92,7 +92,7 @@
       <!-- Project 1 -->
       <h3 class="work__project_title">Mantenimiento correctivo</h3>
       <div class="work__img_wrapper work__image1">
-        <img loading="lazy" src="/mont_combustion.png" alt="Montacargas">
+        <%= image_tag ("mont_combustion.png"), alt: "Montacargas", loading: "lazy" %>
       </div>
       <div class="work__project work__content1">
         <h3 class="work__project_subtitle">Mantenimiento correctivo</h3>
@@ -103,7 +103,7 @@
       <!-- Project 2 -->
       <h3 class="work__project_title">Mantenimiento preventivo</h3>
       <div class="work__img_wrapper work__image2">
-        <img loading="lazy" src="/mula_electrica.jpg" alt="Mula eléctrica">
+        <%= image_tag ("mula_electrica.jpg"), alt: "Mula eléctrica", loading: "lazy" %>
       </div>
       <div class="work__project work__content2">
         <h3 class="work__project_subtitle">Mantenimiento preventivo</h3>
@@ -115,7 +115,7 @@
       <!-- Project 3 -->
       <h3 class="work__project_title">Refacciones</h3>
       <div class="work__img_wrapper work__image3">
-        <img loading="lazy" src="/rep_mula_mecanica_rec.png" alt="Reparación de mula mecánica">
+        <%= image_tag ("rep_mula_mecanica_rec.png"), alt: "Reparación de mula mecánica", loading: "lazy" %>
       </div>
       <div class="work__project work__content3">
         <h3 class="work__project_subtitle">Refacciones</h3>
@@ -126,11 +126,11 @@
       <!-- Project 4 -->
       <h3 class="work__project_title">Project 4</h3>
       <div class="work__img_wrapper work__image4">
-        <img loading="lazy" src="/plataforma_electrica_rec.jpg" alt="Plataforma eléctrica">
+        <%= image_tag ("plataforma_electrica_rec.jpg"), alt: "Plataforma eléctrica", loading: "lazy" %>
       </div>
       <div class="work__project work__content4">
         <h3 class="work__project_subtitle">Project 4</h3>
-        <p class="work__project_desc1">Elit maxime perferendis aut soluta error Ipsa sint doloremque nemo rerum maxime Neque illum eaque libero asperiores laboriosam Quos deserunt temporibus ad consequuntur repellat. Deserunt inventore fugit quaerat minus saepe.</p>
+        <p class="work__project_desc1">Elit perferendis aut soluta error Ipsa sint doloremque nemo rerum maxime Neque illum eaque libero asperiores laboriosam Quos deserunt temporibus ad consequuntur repellat. Deserunt inventore fugit quaerat minus saepe.</p>
         <p class="work__project_desc2">Consectetur expedita eveniet tempora sed atque accusamus. Ex dignissimos repellat aliquid labore iusto dolorem Sequi lorem unde sequi nemo animi ea Animi qui voluptates dolores iure alias omnis. Tenetur aliquam.</p>
         <a class="btn work__project_btn" href="#">Go</a>
       </div>
