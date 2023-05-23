@@ -31,7 +31,6 @@
 /config/master.key
 
 # Ignore most asset images
-./app/assets/images/
 
 # Vite Ruby
 /public/vite*
@@ -40,4 +39,4 @@ node_modules
 # https://vitejs.dev/guide/env-and-mode.html#env-files
 *.local
 
-app/assets/images
+# app/assets/images
