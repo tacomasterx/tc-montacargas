@@ -1,0 +1,28 @@
+version: '3.8'
+services: 
+  database:
+    image: postgres
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - pgdb:/var/lib/postgres/data/
+    cpu_period: 50000
+    cpu_quota: 25000
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/app
+      - bundler_gems:/usr/local/bundle/bundler/gems/
+    ports: 
+      - "80:3000"
+    depends_on:
+      - database
+    cpu_period: 50000
+    cpu_quota: 25000
+
+volumes:
+  pgdb:
+  bundler_gems:
