@@ -1,0 +1,89 @@
+.pdf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.pdf__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    text-transform: capitalize;
+}
+
+.pdf__description {
+    font-size: var(--size-sm);
+    color: var(--clr-main);
+    max-width: 60ch;
+}
+
+.pdf__btn {
+    font-size: var(--size-sm);
+}
+
+/* xs */
+@media (min-width: 475px) {
+.pdf {
+    gap: 1.5rem;
+}
+
+.pdf__title {
+    font-size: var(--size-3xl);
+}
+
+.pdf__description {
+    font-size: var(--size-base);
+}
+
+.pdf__btn {
+    font-size: var(--size-base);
+}
+}
+
+/* sm */
+/* @media (min-width: 640px) { */
+/* } */
+
+/* md */
+/* @media (min-width: 768px) { */
+/* } */
+
+/* lg */
+@media (min-width: 1024px) {
+.pdf__title {
+    font-size: var(--size-4xl);
+}
+
+.pdf__description {
+    font-size: var(--size-lg);
+}
+
+.pdf__btn {
+    font-size: var(--size-lg);
+}
+}
+
+/* xl */
+@media (min-width: 1280px) {
+.pdf {
+    gap: 2rem;
+}
+
+.pdf__title {
+    font-size: var(--size-5xl);
+}
+
+.pdf__description {
+    font-size: var(--size-xl);
+}
+
+.pdf__btn {
+    font-size: var(--size-xl);
+}
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) { */
+/* } */

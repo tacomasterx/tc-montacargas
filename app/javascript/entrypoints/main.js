@@ -11,6 +11,7 @@ import '~/styles/utils.css'
 
 import mobileNavCtrl from './mobile-nav.js'
 import darkMode from './dark-mode.js'
+import savePdf from './save-pdf.js'
 
 mobileNavCtrl();
 darkMode();

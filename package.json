@@ -2,5 +2,8 @@
   "devDependencies": {
     "vite": "^4.3.8",
     "vite-plugin-ruby": "^3.2.2"
+  },
+  "dependencies": {
+    "html2pdf.js": "^0.10.1"
   }
 }
